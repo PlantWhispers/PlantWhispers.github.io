@@ -180,6 +180,17 @@ nav a {
 	z-index: 1;
 }
 
+#hamburger-icon {
+	position: relative;
+	right: 5px;
+	display: none;
+	visibility: hidden;
+}
+
+#normal-nav {
+	visibility: visible;
+}
+
 /* All that Follows is for mobile phones only!!: */
 
 @media only screen and (max-width: 1500px) {
@@ -197,11 +208,22 @@ nav a {
 		background-image: url(assets/img/bg.png);
 		background-size: cover;
 		background-position: center;
-		height: 95vh;
 		text-align: center;
 		padding: 1em;
 		font-size: 16px;
 	}
+	
+	#normal-nav {
+		display: none;
+		visibility: hidden;
+	}
+	
+	#hamburger-icon {
+	position: relative;
+	right: 5px;
+	display: contents;
+	visibility: visible;
+}
 	
 	.titel-section h1 {
 	margin-top: 15vh;
@@ -212,5 +234,14 @@ nav a {
 	
 	.titel-section h4 {
 	font-size: 1.5vh
+}
+	
+	.arrow-box {
+	position: absolute;
+	left: 50%;
+	bottom: 10em;
+	transform: translateX(-50%);
+	height: 5em;
+	width: 5em;
 }
 }

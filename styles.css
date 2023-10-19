@@ -182,7 +182,7 @@ nav a {
 
 /* All that Follows is for mobile phones only!!: */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
 
 	body {
 		font-family: Poppins, sans-serif;

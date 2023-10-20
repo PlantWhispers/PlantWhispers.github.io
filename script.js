@@ -12,8 +12,6 @@ async function toggleMobileMenu(menu) {
     const milestones = document.getElementById("milestones");
     milestones.classList.toggle('blur');
     menu.classList.toggle('open');
-    await Sleep(500);
-    document.body.classList.toggle('noscroll');
 }
 
 function Sleep(milliseconds) {

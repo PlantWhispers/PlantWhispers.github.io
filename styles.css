@@ -74,6 +74,10 @@ p {
 	padding-right: 50px;
 	margin: 0 auto;
 	line-height: 1.4;
+	hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
 }
 
 section {

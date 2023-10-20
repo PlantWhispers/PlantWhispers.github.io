@@ -105,6 +105,8 @@ nav a {
 	color: #fff;
 	text-decoration: none;
 	padding: 0.75em 1.25em;
+	display: flex;
+	flex-direction: row-reverse;
 }
 
 .arrow-box {
@@ -180,15 +182,75 @@ nav a {
 	z-index: 1;
 }
 
-#hamburger-icon {
-	position: relative;
-	right: 5px;
-	display: none;
-	visibility: hidden;
-}
-
 #normal-nav {
 	visibility: visible;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: right;
+	padding: 20px 0px 10px 0px;
+}
+
+.mobile-menu {
+  position: absolute;
+  align-content: center;
+  visibility: hidden;
+  top: 50px;
+  left: 0;
+  /*height: calc(100vh - 50px);*/
+	height: auto;
+	
+  width: 100%;
+
+}
+
+.open .mobile-menu{
+	background-color: rgba(0,0,0,.3);
+	visibility: visible;
+}
+.open .mobile-menu li {
+	display: flex;
+	float: right;
+	width: 100%;
+  margin-bottom: 10px;
+}
+.open .mobile-menu ul {
+  padding-left: 0px;
+	margin: 20px 0px 20px 0px;
+}
+.mobile-menu li a {
+	width: 100%;
 }
 
 /* All that Follows is for mobile phones only!!: */
@@ -202,6 +264,12 @@ nav a {
 		margin: 0;
 		color: #fff;
 		overflow-x: hidden;
+	}
+	
+	nav {
+		flex-direction: row-reverse;
+		margin: 5px 20px 10px 20px;
+		justify-content: end;
 	}
 
 	.titel-section {
@@ -219,9 +287,7 @@ nav a {
 	}
 	
 	#hamburger-icon {
-	position: relative;
-	right: 5px;
-	display: contents;
+	display: block;
 	visibility: visible;
 }
 	

@@ -258,7 +258,7 @@ nav a {
 }
 
 .noscroll {
-	overflow: clip;
+	overflow: hidden;
 }
 
 /* All that Follows is for mobile phones only!!: */

@@ -1,4 +1,6 @@
 async function toggleMobileMenu(menu) {
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    hamburgerIcon.scrollIntoView({ behavior: "smooth" });
     const scopes = document.getElementById("scopes-objectives");
     scopes.classList.toggle('blur');
     const team = document.getElementById("our-team");
@@ -16,9 +18,4 @@ async function toggleMobileMenu(menu) {
 
 function Sleep(milliseconds) {
     return new Promise(resolve => setTimeout(resolve, milliseconds));
-}
-
-function scrollToHamburger() {
-    const hamburgerIcon = document.getElementById("hamburger-icon");
-    hamburgerIcon.scrollIntoView({ behavior: "smooth" });
 }

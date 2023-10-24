@@ -5,6 +5,10 @@
 	--bg-color: #38383b
 }
 
+*{
+	
+	margin: 0px 0px 0px 0px;
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -222,14 +226,17 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: end;
+  overflow-x: hidden;
   justify-content: right;
 	padding: 20px 0px 10px 0px;
 }
 
 .mobile-menu {
+  overflow-x: hidden;
   position: absolute;
   align-content: center;
   visibility: hidden;
+  display: none;
   top: 50px;
   left: 0;
   /*height: calc(100vh - 50px);*/
@@ -242,6 +249,7 @@ nav a {
 .open .mobile-menu{
 	background-color: rgba(0,0,0,.5);
 	visibility: visible;
+	overflow-x: hidden;
 }
 .open .mobile-menu li {
 	display: flex;
@@ -280,7 +288,8 @@ nav a {
 	
 	nav {
 		flex-direction: row-reverse;
-		margin: 5px 20px 10px 20px;
+		margin: 10px 20px 10px 20px;
+
 		justify-content: end;
 	}
 

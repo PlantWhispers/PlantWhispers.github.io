@@ -17,7 +17,7 @@ async function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
 
-function Sleep(milliseconds) {
+function Sleep(milliseconds) {ö
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 

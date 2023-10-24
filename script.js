@@ -2,7 +2,7 @@ async function toggleMobileMenu(menu) {
     var p = window.location.pathname;
     const hamburgerIcon = document.getElementById("hamburger-icon");
     hamburgerIcon.scrollIntoView({ behavior: "smooth" });
- if (p.length === 0 || p === "/" || p.match(/^\/?index/)) {
+ if (p.length === 0  || p === "/" || p.match(/^\/?index/)) {
     const scopes = document.getElementById("scopes-objectives");
     scopes.classList.toggle('blur');
     const team = document.getElementById("our-team");

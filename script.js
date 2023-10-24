@@ -20,7 +20,3 @@ async function toggleMobileMenu(menu) {
 function Sleep(milliseconds) {ö
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
-
-function scrollable() {
-    document.body.style.overflow = 'visivble';
-}

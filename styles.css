@@ -237,6 +237,7 @@ nav a {
   align-content: center;
   visibility: hidden;
   display: none;
+  overflow: hidden;
   top: 50px;
   left: 0;
   /*height: calc(100vh - 50px);*/

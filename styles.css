@@ -452,3 +452,43 @@ footer a {
 }
 
 /* ... restlicher CSS-Code ... */
+
+.member-image.kropa:hover {
+    background-image: url('./assets/img/julian_hood.jpg');
+}
+
+.kropa{
+	background-image: url('./assets/img/julian.jpg');
+}
+
+.fabi{
+	background-image: url('./assets/img/fabi_hood.jpg');
+}
+
+.member-image.fabi:hover{
+	background-image: url('./assets/img/fabi.jpg');
+}
+
+.puschi{
+	background-image: url('./assets/img/puschi.jpg');
+}
+
+.member-image.puschi:hover{
+	background-image: url('./assets/img/puschi_hood.jpg');
+}
+
+.wewi{
+	background-image: url('./assets/img/Wewi.jpg');
+}
+
+.member-image.wewi:hover{
+	background-image: url('./assets/img/Wewi_hood.jpg');
+}
+
+.jacob{
+	background-image: url('./assets/img/jacob.jpg');
+}
+
+.member-image.jacob:hover{
+	background-image: url('./assets/img/jacob_hood.jpg');
+}

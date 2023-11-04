@@ -112,6 +112,7 @@ nav ul {
 	justify-content: space-around;
 	color: #fff;
 	margin: 0;
+	border-left: solid 1px #222;
 }
 
 nav a {
@@ -119,7 +120,11 @@ nav a {
 	text-decoration: none;
 	padding: 0.75em 1.25em;
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction:column;
+/*
+if we want to have borders between the links
+border-left: solid 1px #222;
+*/
 }
 
 .arrow-box {
@@ -197,6 +202,9 @@ nav a {
 
 #normal-nav {
 	visibility: visible;
+	width: 180px;
+	text-align: center;
+	
 }
 
 #hamburger-icon {
@@ -269,6 +277,7 @@ nav a {
 }
 .mobile-menu li a {
 	width: 100%;
+	flex-direction: row-reverse;
 }
 
 .blur {

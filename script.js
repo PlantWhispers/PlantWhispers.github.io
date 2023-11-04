@@ -14,6 +14,18 @@ async function toggleMobileMenu(menu) {
     const milestones = document.getElementById("milestones");
     milestones.classList.toggle('blur');
     }
+    if (p.length === 0  || p === "/" || p.match(/^\/?impressum/)) {
+        const impressum = document.getElementById("impressum");
+        impressum.classList.toggle('blur');
+    }
+    if (p.length === 0  || p === "/" || p.match(/^\/?cookies/)) {
+        const cookies = document.getElementById("cookies");
+        cookies.classList.toggle('blur');
+    }
+    if (p.length === 0  || p === "/" || p.match(/^\/?datenschutz/)) {
+        const datenschutz = document.getElementById("datenschutz");
+        datenschutz.classList.toggle('blur');
+    }
     menu.classList.toggle('open');
 }
 

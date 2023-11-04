@@ -462,11 +462,11 @@ footer a {
 }
 
 .fabi{
-	background-image: url('./assets/img/fabi_hood.jpg');
+	background-image: url('./assets/img/fabi.jpg');
 }
 
 .member-image.fabi:hover{
-	background-image: url('./assets/img/fabi.jpg');
+	background-image: url('./assets/img/fabi_hood.jpg');
 }
 
 .puschi{

@@ -353,6 +353,11 @@ border-left: solid 1px #222;
 	height: 5em;
 	width: 5em;
 }
+
+section {
+	height: 100%;
+}
+
 }
 
 footer {
@@ -421,9 +426,10 @@ footer a {
     padding: 0 20px;
 }
 
-.team-member {
-    text-align: center;
-    width: 200px; /* oder flex: 1 1 calc(20% - 20px); */
+.team-member {        
+	display: flex; /* Verwendet Flexbox für das Team-Mitglied-Container */
+	flex-direction: column; /* Stapelt die Kinder (Bild und E-Mail) vertikal */
+	align-items: center; /* Zentriert die Kinder horizontal */
 }
 
 .member-image {

@@ -34,6 +34,9 @@ body {
 	text-align: center;
 	padding: 1em
 }
+footer{
+	margin-top: 60vh;
+}
 
 footer,
 header {
@@ -88,7 +91,9 @@ p {
 section {
 	position: relative;
 	padding: 5vh calc(50vw - 30em);
+	height: 100vh;
 }
+
 /*
 body>section:nth-child(even){
 	background-color: #222;
@@ -337,6 +342,8 @@ border-left: solid 1px #222;
 	.titel-section h4 {
 	font-size: 1.5vh
 }
+
+
 	
 	.arrow-box {
 	position: absolute;
@@ -500,4 +507,14 @@ footer a {
 
 .member-image.jacob:hover{
 	background-image: url('./assets/img/jacob_hood.jpg');
+}
+#email{
+	padding: 0px 0px;
+	width: 286.65px;
+	height: 22.4px;
+}
+
+#cn-style-slot-c0783fc1-0e5a-4d2b-bab2-6f54e1d960dd{
+	display: none;
+	visibility: hidden;
 }

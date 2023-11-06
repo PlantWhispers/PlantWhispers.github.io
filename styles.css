@@ -216,6 +216,7 @@ border-left: solid 1px #222;
   margin: auto 0;
   display: none;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 #hamburger-icon div {
